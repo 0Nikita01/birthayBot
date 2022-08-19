@@ -1,0 +1,95 @@
+{
+    "botDatabase": {
+        "users": {
+            "938017717": {
+                "userName": "Никита",
+                "sex": "male",
+                "role": "dev",
+                "isPay": false,
+                "isAbleToCome": false,   
+                "game": {
+                    "sayAboutBG": false
+                },
+                "performance": false
+
+            },
+            "554406444": {
+                "userName": "Даша",
+                "sex": "female",
+                "role": "guest",
+                "isPay": false,
+                "isAbleToCome": false,   
+                "game": {
+                    "sayAboutBG": false
+                },
+                "performance": false
+            },
+            "119467153": {
+                "userName": "Сабина",
+                "sex": "female",
+                "role": "guest",
+                "isPay": false,
+                "isAbleToCome": false,   
+                "game": {
+                    "sayAboutBG": false
+                },
+                "performance": false
+            },
+            "706659679": {
+                "userName": "Марат",
+                "sex": "male",
+                "role": "organizer",
+                "isPay": false,
+                "isAbleToCome": false,   
+                "game": {
+                    "sayAboutBG": false
+                },
+                "performance": false
+            },
+            "872607793": {
+                "userName": "Илина",
+                "sex": "female",
+                "role": "guest",
+                "isPay": false,
+                "isAbleToCome": false,   
+                "game": {
+                    "sayAboutBG": false
+                },
+                "performance": false
+            },
+            "889751479": {
+                "userName": "Эмиль",
+                "sex": "male",
+                "role": "guest",
+                "isPay": false,
+                "isAbleToCome": false,   
+                "game": {
+                    "sayAboutBG": false
+                },
+                "performance": false
+            },
+            "755509317": {
+                "userName": "Виолетта",
+                "sex": "female",
+                "role": "guest",
+                "isPay": false,
+                "isAbleToCome": false,   
+                "game": {
+                    "sayAboutBG": false
+                },
+                "performance": false
+            },
+            "742850272": {
+                "userName": "Глеб",
+                "sex": "male",
+                "role": "guest",
+                "isPay": false,
+                "isAbleToCome": false,   
+                "game": {
+                    "sayAboutBG": false
+                },
+                "performance": false
+            }
+        }
+    }
+}

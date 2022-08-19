@@ -1,27 +1,30 @@
 const fs = require("fs");
 
-module.exports.greeting = (bot, user) => {
+module.exports.greeting = async (bot, user, sendingVideoModule) => {
     
-    bot.sendMessage(user, 'Посмотри меня\nВидео загружается..', {
+    await bot.sendMessage(user, 'Посмотри меня\nВидео загружается..', {
         reply_markup: JSON.stringify({
             keyboard: [
                 ['Я за движ']
-            ]
+            ],
+            resize_keyboard: true,
+            one_time_keyboard: true
         })
     })
-
-    fs.readFile('./videos/Slomaju_odnim_udarom)-spcs.me.mp4', (err, video) => {
-        if (err) {
-            bot.sendMessage(user, 'Что-то пошло не так, нажмите на кнопку "Получить видео"', {
-                reply_markup: JSON.stringify({
-                    keyboard: [
-                        ['Получить видео']
-                    ]
-                })
-            })
-        }
-        else {
-            bot.sendVideo(user, video);
-        }
-    })
+    
+    await sendingVideoModule.sendingVideo(bot, user, 'video_1');
+    // fs.readFile('./videos/Slomaju_odnim_udarom)-spcs.me.mp4', (err, video) => {
+    //     if (err) {
+    //         bot.sendMessage(user, 'Что-то пошло не так, нажмите на кнопку "Получить видео"', {
+    //             reply_markup: JSON.stringify({
+    //                 keyboard: [
+    //                     ['Получить видео']
+    //                 ]
+    //             })
+    //         })
+    //     }
+    //     else {
+    //         bot.sendVideo(user, video);
+    //     }
+    // })
 }
