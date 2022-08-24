@@ -5,7 +5,15 @@ module.exports.aprovePayment = (bot, data) => {
     const isOk = data[0] === 'confirm' ? true : false;
 
     if (isOk) {
-        bot.sendMessage(data[1], confirmText);
+        bot.sendMessage(data[1], confirmText, {
+            reply_markup: JSON.stringify({
+                keyboard: [
+                    ['Начать игру']
+                ],
+                resize_keyboard: true,
+                one_time_keyboard: true
+            })
+        });
     } else {
         bot.sendMessage(data[1], rejectText, {
             reply_markup: JSON.stringify({

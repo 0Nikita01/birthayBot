@@ -8,7 +8,31 @@
                 "isPay": false,
                 "isAbleToCome": false,   
                 "game": {
-                    "sayAboutBG": false
+                    "sayAboutBG": false,
+                    "gallowTree": {
+                        "mainWord": "сценка-постановка",
+                        "hiddenWord": "______-__________",
+                        "allTry": 7,
+                        "tryed": 0
+                    }
+                },
+                "performance": false
+
+            },
+            "1243525326": {
+                "userName": "Илья",
+                "sex": "male",
+                "role": "guest",
+                "isPay": false,
+                "isAbleToCome": false,   
+                "game": {
+                    "sayAboutBG": false,
+                    "gallowTree": {
+                        "mainWord": "сценка-постановка",
+                        "hiddenWord": "______-__________",
+                        "allTry": 7,
+                        "tryed": 0
+                    }
                 },
                 "performance": false
 
@@ -31,7 +55,13 @@
                 "isPay": false,
                 "isAbleToCome": false,   
                 "game": {
-                    "sayAboutBG": false
+                    "sayAboutBG": false,
+                    "gallowTree": {
+                        "mainWord": "сценка-постановка",
+                        "hiddenWord": "______-__________",
+                        "allTry": 7,
+                        "tryed": 0
+                    }
                 },
                 "performance": false
             },
@@ -42,7 +72,13 @@
                 "isPay": false,
                 "isAbleToCome": false,   
                 "game": {
-                    "sayAboutBG": false
+                    "sayAboutBG": false,
+                    "gallowTree": {
+                        "mainWord": "сценка-постановка",
+                        "hiddenWord": "______-__________",
+                        "allTry": 7,
+                        "tryed": 0
+                    }
                 },
                 "performance": false
             },

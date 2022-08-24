@@ -1,5 +1,5 @@
 const { initializeApp } = require('firebase/app');
-const { getDatabase, ref, set, onValue} = require('firebase/database');
+const { getDatabase, ref, set, onValue, get, child} = require('firebase/database');
 
 const firebaseConfig = {
     apiKey: "AIzaSyDIbA0GX81Y-4f7kK_mgcoT1PpltKWvz1A",
@@ -28,7 +28,8 @@ module.exports = class Firebase {
         set(ref(this.database, path), data);
 	}
 
-    getDataOnce = async (key) => {
-        return await this.database.ref(`data/${key}/usersdata/`).once('value').then(snapshot => snapshot.val());
+    getDataOnce = async (path) => {
+        const dbRef = ref(this.database);
+        return await get(child(dbRef, path))
     }
 }
